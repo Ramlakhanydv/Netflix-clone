@@ -1,0 +1,401 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 500;
+    
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.header{
+    width: 92%;
+    height: 100vh;
+    padding: 60px;
+    background-size: cover;
+    position: relative;
+    
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/img/header-image.png");
+}
+.navbar{
+    padding: 5px;
+    margin: 20px;
+    margin-left: 100px;
+}
+.navbar a img{
+    width: 200px;
+}
+.button{
+    margin-right: 100px;
+}
+.primary-btn{
+    padding: 10px 20px;
+    margin: 4px;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 8px;
+    color: white;
+    
+
+}
+.secondary-btn{
+    padding: 10px 20px;
+    margin: 4px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white;
+}
+.headline{
+    padding: 50px;
+    margin: 10px 150px;
+}
+.headline h1{
+    font-size: 50px;
+    font-weight: 800;
+}
+.headline p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.email-area{
+    padding: 40px;
+    margin: 40px 200px;
+    border: 2.5px solid rgb(223, 30, 204);
+    border-radius: 6px;
+    background-color: rgb(11, 29, 43);
+}
+.email-area h3{
+    margin: 10px;
+}
+.email-area input{
+    width: 500px;
+    height: 40px;
+    padding: 8px;
+    margin: 10px;
+    background-color: black;
+    color: rgb(130, 124, 124);
+    border: 0.5px solid white;
+    border-radius: 8px;
+}
+.primary-btn-email{
+    font-size: 20px;
+    font-weight: 800;
+    padding: 15px 40px;
+    margin: 8px;
+    
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 8px;
+    color: white;
+    
+}
+.main-content{
+    
+    margin: 40px 100px;
+    padding: 40px;
+    background-color: rgb(3, 3, 42);
+    border-radius: 6px;
+}
+.section-feature{
+    margin: 10px;
+    margin-top: 20px;
+    padding: 6px;
+}
+.section-feature h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin: 20px;
+}
+.section-feature p{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px;
+}
+.section-feature img{
+    width: 500px
+}
+
+
+.faq{
+    margin: 100px 150px;
+
+}
+.faq h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin: 20px;
+}
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+
+}
+.accordion li{
+    width: 100%;
+    padding: 10px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 30px 60px;
+    font-size: 25px;
+    font-weight: 500;
+    background-color: rgb(3, 3, 42);
+    margin-bottom: 2px;
+    position: relative;
+
+    transition: 0.3s;
+
+}
+.accordion li label:hover{
+    background-color: rgb(6, 6, 88);
+}
+label::after{
+    content: "+";
+    font-size: 40px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.content p{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 30px 60px;
+}
+.accordion .content{
+    background-color: rgb(4, 4, 60);
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: padding 0.4s;
+}
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.email-area-second{
+    padding: 40px;
+    margin: 40px 200px;
+    
+}
+.email-area-second h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 10px;
+}
+.email-area-second input{
+    width: 500px;
+    height: 40px;
+    padding: 8px;
+    margin: 10px;
+    background-color: black;
+    color: rgb(130, 124, 124);
+    border: 0.5px solid white;
+    border-radius: 8px;
+}
+.footer{
+    margin: 300px 150px;
+}
+.footer h6{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 20px; 
+}
+.footer-links{
+    margin: 20px;
+}
+.ft-link{
+    margin-top: 12px;
+    margin-left: 20px;
+    
+}
+.ft-link a{
+    color: white;
+}
+
+.secondary-btn-second{
+    padding: 10px 20px;
+    margin-top: 60px;
+    margin-left: 20px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white;
+}
+.footer p{
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+@media  only screen and (max-width: 800px) {
+    
+    .flex{
+        flex-direction: column;
+    }
+    .navbar{
+        padding: 2px;
+        margin: 8px;
+        margin-left: 50px;
+    }
+    .navbar a img{
+        width: 100px;
+    }
+    .button{
+        margin: 50px;
+    }
+
+    .headline{
+        padding: 30px;
+        margin: 5px 80px;
+    }
+    .headline h1{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .headline p{
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .email-area{
+        padding: 10px;
+        margin: 8px 50px;
+        border: 2.5px solid rgb(223, 30, 204);
+        border-radius: 6px;
+        background-color: rgb(11, 29, 43);
+    }
+    
+    .email-area input{
+        width: 250px;
+        height: 20px;
+        padding: 6px;
+        margin: 5px;
+        background-color: black;
+        color: rgb(130, 124, 124);
+        border: 0.5px solid white;
+        border-radius: 8px;
+    }
+    .primary-btn-email{
+        font-size: 15px;
+        font-weight: 500;
+        padding: 8px 10px;
+        margin: 4px;
+        
+        background-color: red;
+        border: 1px solid red;
+        border-radius: 8px;
+        color: white;
+        
+    }
+    .main-content{
+    
+        margin: 10px 40px;    
+        padding: 40px;
+        background-color: rgb(3, 3, 42);
+        border-radius: 6px;
+    }
+    .section-feature{
+        margin: 5px;
+        margin-top: 20px;
+        padding: 3px;
+        
+    }
+    .section-feature h1{
+        font-size: 40px;
+        font-weight: 600;
+        margin: 10px;
+    }
+    .section-feature p{
+        font-size: 20px;
+        font-weight: 500;
+        margin: 10px;
+    }
+    .section-feature img{
+        width: 300px
+    }
+    .faq{
+        margin: 50px 80px;
+    
+    }
+    .faq h1{
+        font-size: 40px;
+        font-weight: 600;
+        margin: 10px;
+    }
+    .accordion{
+        margin: 40px auto;
+        width: 100%;
+        max-width: 750px;
+    
+    }
+    .accordion li{
+        width: 100%;
+        padding: 10px;
+    }
+    .email-area-second{
+        padding: 20px;
+        margin: 10px 50px;
+        
+    }
+    .email-area-second h3{
+        font-size: 20px;
+        font-weight: 600;
+        margin: 5px;
+    }
+    .email-area-second input{
+        width: 250px;
+        height: 20px;
+        padding: 6px;
+        margin: 5px;
+        background-color: black;
+        color: rgb(130, 124, 124);
+        border: 0.5px solid white;
+        border-radius: 8px;
+    }
+    .footer{
+        margin: 100px 80px;
+    }
+    .footer h6{
+        font-size: 15px;
+        font-weight: 600;
+        margin: 10px; 
+    }
+    .footer-links{
+        margin: 20px;
+    }
+    .ft-link{
+        margin: 8px;
+        
+    }
+    .ft-link a{
+        color: white;
+    }    
+}
